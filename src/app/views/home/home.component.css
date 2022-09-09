@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+/* Início do Menu */
+.menu-tablet{
+    display: none;
+}
+.menu-responsivo{
+    display:none;
+}
+/* Fim da estilização do Menu */
+
+/* Inicio do Banner */
+.Banner{
+    display: flex;
+    align-items: center;
+    
+    background-image: url( /assets/img/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 628px;
+}
+.texto-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-size: 36px;
+}
+.texto-banner h1{ 
+    font-family: "Inter";
+    font-size: 36px;
+}
+.texto-banner a{
+    padding: 15px;  
+    /*Padding é a margem interior entre a box e conteúdo da box, border é a borda propriamente dita da box,
+    e a margem é a distância da box até a margem do documento*/ 
+    background-color: red;
+    /* Uppercase coloca todo o texto em caixa alta, a particularidade desse comando é que ele não afeta a acessibilidade 
+    do site, a ia não lê como se fosse uma sigla*/
+    border-radius: 30px;
+}
+/* Fim do Banner */
+
+/* Início das garantias de pagamento */
+.infopagamento{
+    display: flex;
+    align-items: center;
+    background-color: #4f5788;
+    height: 60px;
+}
+.garantias{
+    display:flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter";
+    font-weight: bolder;
+}
+.garantias-texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.garantias-texto p{
+    margin: 0; 
+    /*O texto quando posicionado estava com margem em seu box, por isso colocar o comando margin:0 
+    foi necessário para alinhar o texto ao centro da section*/
+    
+    padding: 10px; 
+    /* O padding aqui serviu para afastar o texto da imagem*/   
+}
+/* Fim das garantias de pagamento */
+
+/* Início da Sessão SEJA GAMER */
+.banner-sejagamer{
+    height: 860px;
+    background-image: url( /assets/img/backgroundinformativo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.posicionamento-gamer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo-sejagamer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    color: white;
+    font-size: 55px;
+    font-family: "Inter";
+    font-weight: bolder;
+
+    height: 100px;
+}
+.conteudo-sejagamer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto-sejagamer p{
+    padding: 20px;
+    font-family: "Baskerville";
+    color: white;
+    font-size: 33px;
+    text-align: justify;
+}
+.texto-sejagamer a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.botao-sejagamer{
+    align-items: center;
+    font-family: "Inter";
+    color: white;
+    font-size: 33px;
+    padding: 15px;  
+    background-color: red;
+    border-radius: 30px;
+    margin: 0 auto;
+  
+}
+/* Fim da Sessão SEJA GAMER */
+
+/* Início da Sessão Produtos */
+.background-vendas{
+    background-color: #11132c;
+    margin-top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.retangulo{
+    height: 750px;
+    width: 1200px ;
+    background-color: #0c0d13;
+    background-blend-mode: color;
+    border-radius:30px;
+    border: #000000;
+    border-style: solid;   
+}
+.titulo{
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: bolder;
+    color: white;
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.ofertas-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 670px;
+}
+.produto{
+    height: 388px;
+    width: 251px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: #000000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+/* tentar colocar os cards dos produtos em uma estilização só para todos */
+.produto p{
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: bottom 20px; ;
+}
+.produto2{
+    margin-bottom: 2px;
+    margin-top: 8px;
+}
+.produto2 p{
+    margin-bottom: 2px;
+    margin-top: 8px;
+}
+.produto3{
+    align-items: center;
+    justify-content: center;
+}
+.produto3 img{
+    display: flex;
+    margin: auto;
+}
+.produto3 p{
+    margin-top: 73px;
+}
+.botao-ofertas{
+    font-family: "Inter";
+    color: white;
+    font-size: 20px;
+    padding: 15px;  
+    background-color: red;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+/* Fim da Sessão Produtos */
+
+
+
+

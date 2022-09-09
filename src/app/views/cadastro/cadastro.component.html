@@ -1,0 +1,21 @@
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" id="carrossel" class="banner-1 effects pagina-login">
+        <div class="body-login">
+            <div class="container login-pagina">
+            <div class="nome">
+                <label for="nome">Nome </label>
+                <input type="text" id="nome" name="nome" ngModel placeholder="Nome">
+            </div>
+            <div class="email">
+                <label for="email">E-mail </label>
+                <input type="email" name="email" ngModel id="email" placeholder="  Exemplo@email.com">
+            </div>
+            <div class="senha">
+                <label for="senha">Senha </label>
+                <input type="password" name="senha" ngModel id="senha" placeholder="  Digite sua senha.">
+            </div>
+            <button type="submit" class="botao-login">
+                Cadastrar
+            </button>
+        </div>
+    
+

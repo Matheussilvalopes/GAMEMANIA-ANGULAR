@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.pagina-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-login{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    
+}
+.banner-1{
+    background-image: url(/assets/img/banner-lol.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-2{
+    background-image: url(/assets/img/banner\ cs.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat
+
+}
+.banner-3{
+    background-image: url(/assets/img/banner-valorant.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.effects{
+    transition-duration: 4000ms;
+    
+}
+.login-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 312px;
+    width: 463px;
+    background-color: #111326;
+    border-radius: 20px;
+
+}
+.email{
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: "Inter";
+}
+
+.email label{
+    padding-right: 10px;
+}
+
+.email input{
+    border-radius: 10px;
+    width: 300px;
+}
+
+.senha{
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: "Inter";
+}
+
+.senha label{
+    padding-right: 10px;
+}
+
+.senha input{
+    border-radius: 10px;
+    width: 300px;
+}
+.nome{
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    color: aliceblue;
+    font-family: "Inter";
+}
+
+.nome label{
+    padding-right: 10px;
+}
+
+.nome input{
+    border-radius: 10px;
+    width: 300px;
+}
+
+.botao-login{
+    background-color: #4f5788;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: "Inter";
+    font-size: 18px;
+    width: 200px;
+}

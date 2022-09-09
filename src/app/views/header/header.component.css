@@ -1,0 +1,65 @@
+.mat-toolbar-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 132px;
+    background-color: #021029;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icones-header{
+    display: flex;
+    width: 200px;
+    height: fit-content;
+    justify-content: space-between;
+}
+.cadastro{
+    width: 150px;
+    display:flex;
+    justify-content: space-between;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 22px;
+    width: 120px;
+}
+#cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 22px;
+    width: 120px;
+}
+#txtBusca{
+    /* diz respeito ao formato */
+    padding-left:5px;
+    border:solid 1px;
+    height:37px;
+    width: 650px;
+    border-radius: 30px;
+
+    /*Diz respeito a fonte */
+    font-style:italic;
+    font-size:18px;
+    text-indent: 15px;
+    
+    /* diz respeito a estilização da lupa */
+    background-image:url(/assets/img/lupa.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+}
+#barras{
+    display: none;
+}
