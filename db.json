@@ -12,6 +12,27 @@
       "name": "",
       "lastname": "",
       "id": 2
+    },
+    {
+      "email": "marcelo@email.com",
+      "password": "$2a$10$T8xSCgyMqrPTcUtL4ryFKO/1YBpBZ3PzCdpAd1Kp/xW6ADfxovqWa",
+      "name": "Marcelo",
+      "lastname": "Tavares",
+      "id": 3
+    },
+    {
+      "email": "thais@email.com",
+      "password": "$2a$10$.NVX48rD7cs4rorKAMJTaeQK65i6yyJ6FH/p27hsTB307E4GBRZ5e",
+      "name": "Thais",
+      "lastname": "Silva",
+      "id": 4
+    },
+    {
+      "email": "sabrina@email.com",
+      "password": "$2a$10$ablKlYxvSYi5kVHj0ggzXOaM7AWbWAesmr6Re3BCuCx8HvWXAqijW",
+      "name": "Sabrina",
+      "lastname": "Fernandes",
+      "id": 5
     }
   ]
 }

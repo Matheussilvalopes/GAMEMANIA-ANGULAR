@@ -19,7 +19,10 @@ export class CadastroComponent implements OnInit {
 
   cadastrarDados(){
     this.cadastroService.cadastro(this.cadastrouserModel).subscribe((response) =>{
-      console.log(response)      
+      console.log(response)
+      if(response.statusText == "Created"){
+        this.mensagem = "Cadastro feito com sucesso!"
+      }      
   }, (respostaErro) =>{
     if( respostaErro.error == "Incorrect password"){
       this.mensagem = "Senha incorreta"

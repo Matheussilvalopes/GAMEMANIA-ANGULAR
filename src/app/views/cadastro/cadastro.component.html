@@ -17,6 +17,7 @@
                 <label for="senha">Senha </label>
                 <input type="password" name="senha" [(ngModel)]="cadastrouserModel.password" id="senha" placeholder="  Digite sua senha.">
             </div>
+            <p id="mensagem" *ngIf="mensagem != ''">{{mensagem}}</p>
             <button type="submit" class="botao-login">
                 Cadastrar
             </button>

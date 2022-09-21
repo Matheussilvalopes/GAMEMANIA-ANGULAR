@@ -17,13 +17,17 @@ export class LoginComponent implements OnInit {
 
   userModel = new User();
   mensagem=''
+  
 
   receberDados(){
     console.log(this.userModel)
     this.loginService.login(this.userModel).subscribe((response) =>{
       console.log(response);
-      localStorage.setItem("nomeUsuario", response.body.user.name);
-      this.router.navigateByUrl("/")      
+      
+      // this.router.navigateByUrl("/")
+      if(response.statusText == "OK"){
+        this.mensagem = "Login feito com sucesso!"
+      }  
     }, (respostaErro) =>{
       console.log("Deu errado")
       // alert(respostaErro.error);
