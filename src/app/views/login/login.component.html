@@ -1,17 +1,19 @@
-<section id="carrossel" class="banner-1 effects pagina-login">
+<form (ngSubmit)="receberDados()" id="carrossel" class="banner-1 effects pagina-login">
     <div class="body-login">
         <div class="container login-pagina">
         <div class="email">
-            <label>E-mail </label>
-            <input type="email" placeholder="  Exemplo@email.com">
+            <label for="email">E-mail </label>
+            <input type="email" name="email" [(ngModel)]="userModel.email" id="email" placeholder="  Exemplo@email.com">
         </div>
         <div class="senha">
-            <label>Senha </label>
-            <input type="password" placeholder="  Digite sua senha.">
+            <label for="senha">Senha </label>
+            <input type="password" name="senha" [(ngModel)]="userModel.password" id="senha" placeholder="  Digite sua senha.">
         </div>
-        <button class="botao-login">
-            Confirmar
+        <div>
+            <p id="mensagem" *ngIf="mensagem != ''">{{mensagem}}</p>
+        </div>
+        
+        <button type="submit" class="botao-login">
+            Entrar
         </button>
     </div>
-    </div>
-</section>
