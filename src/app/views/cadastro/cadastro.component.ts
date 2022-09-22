@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { cadastroUser } from 'src/app/models/user';
+import { User } from 'src/app/models/user';
 import{CadastroService} from "src/app/services/cadastro.service";
+
 
 @Component({
   selector: 'app-cadastro',
@@ -14,11 +15,11 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  cadastrouserModel = new cadastroUser();
+  userModel = new User();
   mensagem = ' ';
 
   cadastrarDados(){
-    this.cadastroService.cadastro(this.cadastrouserModel).subscribe((response) =>{
+    this.cadastroService.cadastro(this.userModel).subscribe((response) =>{
       console.log(response)
       if(response.statusText == "Created"){
         this.mensagem = "Cadastro feito com sucesso!"
