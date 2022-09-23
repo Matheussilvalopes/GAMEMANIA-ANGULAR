@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
+import { Login } from 'src/app/models/login';
+ 
 
 @Component({
   selector: 'app-login',
@@ -15,6 +17,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+  loginModel = new Login();
   userModel = new User();
   mensagem=''
   
@@ -24,7 +28,17 @@ export class LoginComponent implements OnInit {
     this.loginService.login(this.userModel).subscribe((response) =>{
       console.log(response);
       
+      const listaPalavras: string[]=["select ","from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\'", "\"","--","#","*",";"]
       // this.router.navigateByUrl("/")
+      listaPalavras.forEach(palavra =>{
+        if(this.loginModel.email?.toLowerCase().includes(palavra)){
+          this.mensagem ="Dados inválidos!"
+
+
+        return
+      }
+      })
+
       if(response.statusText == "OK"){
         this.mensagem = "Login feito com sucesso!"
       }  
@@ -39,6 +53,9 @@ export class LoginComponent implements OnInit {
       }else if(respostaErro.error == "Password is too short"){ 
         this.mensagem = "Senha muito curta"
         
+      }else if(respostaErro.error == "Email format is invalid"){
+        this.mensagem = "Formato de email inválido"
+
       }else{
         this.mensagem = respostaErro.error
       }

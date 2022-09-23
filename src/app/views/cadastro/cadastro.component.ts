@@ -31,9 +31,11 @@ export class CadastroComponent implements OnInit {
       this.mensagem = "Email e senha são necessárias"
     }else if(respostaErro.error == "Password is too short"){ 
       this.mensagem = "Senha muito curta"
-      
+    }else if(respostaErro.error == "Email already exists"){
+      this.mensagem = "Email já cadastrado."
     }else{
-      this.mensagem = respostaErro.error
+      this.mensagem = respostaErro.error;
+      
     }
   })
   }
