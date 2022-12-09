@@ -29,7 +29,6 @@ export class LoginComponent implements OnInit {
       console.log(response);
       
       const listaPalavras: string[]=["select ","from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\'", "\"","--","#","*",";"]
-      // this.router.navigateByUrl("/")
       listaPalavras.forEach(palavra =>{
         if(this.loginModel.email?.toLowerCase().includes(palavra)){
           this.mensagem ="Dados inválidos!"
@@ -41,6 +40,7 @@ export class LoginComponent implements OnInit {
 
       if(response.statusText == "OK"){
         this.mensagem = "Login feito com sucesso!"
+        this.router.navigateByUrl("/home");
       }  
     }, (respostaErro) =>{
       console.log("Deu errado")

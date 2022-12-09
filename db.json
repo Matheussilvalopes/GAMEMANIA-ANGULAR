@@ -5,6 +5,24 @@
       "password": "$2a$10$NWSRlXv5IgiIiErUm0S8YezEQxEdnuewtvkpo9yjaA12Q8hLxaP4K",
       "nome": "matheus",
       "id": 1
+    },
+    {
+      "email": "patricia@email.com",
+      "password": "$2a$10$X/wobCymCJrO3qpSRBz3HOQA52cTBw3L/Nsvk/IlbP6H9QChpml5e",
+      "name": "Patrícia",
+      "id": 2
+    },
+    {
+      "email": "patricia@email.com",
+      "password": "senhapatricia",
+      "name": "Patrícia",
+      "id": 3
+    },
+    {
+      "email": "joao@email.com",
+      "password": "senhajoao",
+      "name": "Joao",
+      "id": 4
     }
   ]
 }
