@@ -11,7 +11,6 @@ import { MenuComponent } from './views/menu/menu.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { LoginComponent } from './views/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { CadastroComponent } from './views/cadastro/cadastro.component';
 import { MatDatepickerModule} from '@angular/material/datepicker';
 import {HttpClientModule} from "@angular/common/http";
 
@@ -24,7 +23,6 @@ import {HttpClientModule} from "@angular/common/http";
     MenuComponent,
     FooterComponent,
     LoginComponent,
-    CadastroComponent,
   
   ],
   imports: [

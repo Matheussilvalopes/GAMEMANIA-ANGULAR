@@ -13,16 +13,27 @@
       "id": 2
     },
     {
-      "email": "patricia@email.com",
-      "password": "senhapatricia",
-      "name": "Patrícia",
-      "id": 3
-    },
-    {
       "email": "joao@email.com",
       "password": "senhajoao",
       "name": "Joao",
+      "id": 3
+    },
+    {
+      "email": "thiago@email.com",
+      "password": "$2a$10$tRDFOnQSWg9mKqA21oI1g.C9vOpEW3Z1yw7BNy4gMZmYjnv9I4152",
+      "name": "thiago",
       "id": 4
+    },
+    {
+      "email": "maria@email.com",
+      "password": "$2a$10$t6XJV6PdvZgLa1jpCUKDzuIKICnFcxIUEZD2gkLarRqXB6DygSQXS",
+      "name": "Maria",
+      "id": 5
+    },
+    {
+      "email": "carvalho@gmail.com",
+      "password": "$2a$10$SMNtkZeYkXW9vJ7toRqQruTwcoyazaPPKz7zLEyjo5nGz8BCnD2mm",
+      "id": 6
     }
   ]
 }

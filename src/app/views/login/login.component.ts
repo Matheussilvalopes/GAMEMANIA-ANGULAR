@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
-import { Login } from 'src/app/models/login';
+
  
 
 @Component({
@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   
-  loginModel = new Login();
+
   userModel = new User();
   mensagem=''
   
@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       
       const listaPalavras: string[]=["select ","from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\'", "\"","--","#","*",";"]
       listaPalavras.forEach(palavra =>{
-        if(this.loginModel.email?.toLowerCase().includes(palavra)){
+        if(this.userModel.email?.toLowerCase().includes(palavra)){
           this.mensagem ="Dados inválidos!"
 
 
@@ -40,10 +40,10 @@ export class LoginComponent implements OnInit {
 
       if(response.statusText == "OK"){
         this.mensagem = "Login feito com sucesso!"
-        this.router.navigateByUrl("/home");
+        this.router.navigateByUrl("/");
       }  
     }, (respostaErro) =>{
-      console.log("Deu errado")
+      console.log(respostaErro.error)
       // alert(respostaErro.error);
 
       if( respostaErro.error == "Incorrect password"){
